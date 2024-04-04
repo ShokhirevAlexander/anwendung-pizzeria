@@ -1,0 +1,1 @@
+[{"model": "product.category", "pk": 1, "fields": {"title": "Мясные"}}, {"model": "product.category", "pk": 2, "fields": {"title": "Вегетарианская"}}, {"model": "product.category", "pk": 3, "fields": {"title": "Гриль"}}, {"model": "product.category", "pk": 4, "fields": {"title": "Острые"}}, {"model": "product.category", "pk": 5, "fields": {"title": "Закрытые"}}]
