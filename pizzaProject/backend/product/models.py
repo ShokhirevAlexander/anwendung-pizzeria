@@ -2,6 +2,7 @@ from django.db import models
 
 
 class Category(models.Model):
+    """ Категории продукта """
     title = models.CharField(max_length=25, verbose_name='категория')
 
     class Meta:
