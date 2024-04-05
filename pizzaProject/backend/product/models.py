@@ -2,6 +2,7 @@ from django.db import models
 
 
 class Category(models.Model):
+    """ Модель категорий продукта """
     title = models.CharField(max_length=25, verbose_name='категория')
 
     class Meta:
@@ -13,6 +14,7 @@ class Category(models.Model):
 
 
 class Product(models.Model):
+    """ Модель продукта """
     title = models.CharField(max_length=25, verbose_name='наименование')
     image = models.ImageField(upload_to='images/%Y', verbose_name='изображение')
     category = models.ForeignKey(Category, on_delete=models.CASCADE, verbose_name='категория')
@@ -27,6 +29,7 @@ class Product(models.Model):
 
 
 class ProductSize(models.Model):
+    """ Модель размера и цены продукта """
     PRODUCT_SIZE = (
         ('26cm', '26см'),
         ('30cm', '30см'),
@@ -57,6 +60,7 @@ class ProductSize(models.Model):
 
 
 class TypeOfTest(models.Model):
+    """ Модель типа теста продукта  """
     TYPE_TEST = (
         ('thin', 'тонкое'),
         ('traditional', 'традиционное')
